@@ -2,7 +2,7 @@
 
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
-import 'package:furniture_app/views/splash/intro_page.dart';
+import 'package:furniture_app/core/routes/app_routes.dart';
 
 class SplashWidget extends StatefulWidget {
   const SplashWidget({super.key});
@@ -17,10 +17,7 @@ class _SplashWidgetState extends State<SplashWidget> {
     super.initState();
 
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const OnboardingScreen()),
-      );
+      RouteView.onboarding.go();
     });
   }
 

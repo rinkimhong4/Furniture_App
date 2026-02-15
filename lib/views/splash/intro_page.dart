@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furniture_app/core/data/app_data.dart';
-import 'package:furniture_app/views/home/home_screen.dart';
+import 'package:furniture_app/core/routes/app_routes.dart';
 import 'package:furniture_app/widgets/smartImage.dart';
-import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -38,7 +37,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       );
     } else {
       // Navigate to HomeScreen and remove onboarding from stack
-      Get.off(HomeScreen());
+      // Get.off(HomeScreen());
+      RouteView.home.go(clearAll: true);
     }
   }
 
@@ -56,7 +56,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () => Get.off(HomeScreen()),
+                  onPressed: () => RouteView.home.go(clearAll: true),
+                  // Get.off(HomeScreen()),
                   style: TextButton.styleFrom(
                     foregroundColor: Colors.black54,
                     textStyle: theme.textTheme.labelLarge?.copyWith(
@@ -129,7 +130,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     const SizedBox(height: 16),
                     TextButton(
                       onPressed: () {
-                        Navigator.pushReplacementNamed(context, '/login');
+                        // Get.off(SigninScreen());
+                        RouteView.signIn.go(clearAll: true);
                       },
                       style: TextButton.styleFrom(
                         foregroundColor: Colors.black87,

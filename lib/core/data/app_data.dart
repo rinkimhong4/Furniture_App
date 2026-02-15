@@ -47,16 +47,16 @@ class AppData {
     },
   ];
 
-  // =========================
-  // Categories
-  // =========================
-  static List<Map<String, dynamic>> categories = [
-    {"name": "Sofas", "icon": Icons.weekend},
-    {"name": "Chairs", "icon": Icons.chair},
-    {"name": "Tables", "icon": Icons.table_bar},
-    {"name": "Beds", "icon": Icons.bed},
-    {"name": "Storage", "icon": Icons.inventory_2},
-  ];
+  // // =========================
+  // // Categories
+  // // =========================
+  // static List<Map<String, dynamic>> categories = [
+  //   {"name": "Sofas", "icon": Icons.weekend},
+  //   {"name": "Chairs", "icon": Icons.chair},
+  //   {"name": "Tables", "icon": Icons.table_bar},
+  //   {"name": "Beds", "icon": Icons.bed},
+  //   {"name": "Storage", "icon": Icons.inventory_2},
+  // ];
 
   // =========================
   // Demo Products
@@ -85,13 +85,52 @@ class AppData {
     },
   ];
 
-  // =========================
-  // Routes
-  // =========================
-  static const String splashRoute = "/splash";
-  static const String introRoute = "/intro";
-  static const String onboardingRoute = "/onboarding";
-  static const String homeRoute = "/home";
-  static const String loginRoute = "/login";
-  static const String registerRoute = "/register";
+  //
+  static final List<Map<String, dynamic>> categories = [
+    {"name": "Table", "icon": Icons.table_restaurant_outlined},
+    {"name": "Chair", "icon": Icons.chair},
+    {"name": "Bed", "icon": Icons.bed},
+    {"name": "Lamp", "icon": Icons.light_rounded},
+    {"name": "Sofa", "icon": Icons.weekend},
+    {"name": "Shelf", "icon": Icons.dashboard},
+  ];
+
+  static const explore = [
+    {
+      'name': 'Adirondack Chair',
+      'price': '100',
+      'image':
+          'https://static.vecteezy.com/system/resources/previews/037/485/748/non_2x/ai-generated-eggshell-white-chair-scandinavian-modern-minimalist-style-transparent-background-isolated-image-png.png',
+    },
+    {
+      'name': 'Adirondack Chair',
+      'price': '100',
+      'image':
+          'https://static.vecteezy.com/system/resources/previews/037/485/748/non_2x/ai-generated-eggshell-white-chair-scandinavian-modern-minimalist-style-transparent-background-isolated-image-png.png',
+    },
+    {
+      'name': 'Adirondack Chair',
+      'price': '100',
+      'image':
+          'https://static.vecteezy.com/system/resources/previews/037/485/748/non_2x/ai-generated-eggshell-white-chair-scandinavian-modern-minimalist-style-transparent-background-isolated-image-png.png',
+    },
+    {
+      'name': 'Adirondack Chair',
+      'price': '100',
+      'image':
+          'https://static.vecteezy.com/system/resources/previews/037/485/748/non_2x/ai-generated-eggshell-white-chair-scandinavian-modern-minimalist-style-transparent-background-isolated-image-png.png',
+    },
+    {
+      'name': 'Adirondack Chair',
+      'price': '100',
+      'image':
+          'https://static.vecteezy.com/system/resources/previews/037/485/748/non_2x/ai-generated-eggshell-white-chair-scandinavian-modern-minimalist-style-transparent-background-isolated-image-png.png',
+    },
+    {
+      'name': 'Adirondack Chair',
+      'price': '100',
+      'image':
+          'https://static.vecteezy.com/system/resources/previews/037/485/748/non_2x/ai-generated-eggshell-white-chair-scandinavian-modern-minimalist-style-transparent-background-isolated-image-png.png',
+    },
+  ];
 }
